@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão</title>
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/sub-pag-projetos.css">
+    <script src="../js/lightbox.js"></script>
+    <link rel="shortcut icon" href="../imagens/projetos/gestao-projeto/favicon.png" type="image/x-icon">
+    <meta name="description" content="Desafio para desenvolver a tela principal de um sistema de gestão.">
+</head>
+<body>
+    <section class="hero hero-gestao-projeto">
+        <div class="hero-conteudo">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#projetos">Projetos</a></li>
+            </ul>            
+            <div class="hero-textos">
+                <h2>HSL - 100 anos</h2>
+                <h4>Contexto</h4>
+                <p>O desafio consistia em criar uma tela para um sistema web de gestão do time e das tarefas para uma agência de publicidade. O sistema deveria permitir a visualização de todas as demandas dos cliente e distribuição por funcionários.</p>
+                <h6>2021</h6>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div id="lightbox"></div>
+        <h4 class="artigo-titulo">Pesquisa inicial</h4>
+        <p>Comecei com uma matriz CSD, que me ajudou a organizar o que já sabia sobre o tema e minhas principais dúvidas.</p>
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/matrizcsd.png" alt="Matriz CSD">
+        <p>A partir da matriz comecei um desk research buscando entender mais sobre o problema e abaixo destaco os principais achados.</p>
+        <ul class="lista-disc">
+            <li>De acordo com o panorama das agências digitais 2021 feito pelo Rock Content, estruturar a operação e organizar processos foi considerado o maior desafio por 12% das agências.</li>
+            <li>Outro dado apresentado pelo panorama é o uso dos relatórios de acompanhamento, que foi considerado por quase 19% das agências como um fator de retenção de clientes. Extrair relatórios direto do sistema parece ser um caminho interessante.</li>
+            <li>De acordo com a pesquisa feita, as dores para gestores são conseguir cadastrar tarefas, ver quem está disponível e o prazo da tarefa.</li>
+            <li>Foi mencionado que seria interessante uma forma rápida de ver todas as atividades, quem são os colaboradores, o que estão fazendo, o tempo de dedicação e quando irá entregar.</li>
+        </ul>
+        <p>Analisei as principais ferramentas de gestão de projeto do mercado, Monday e Jira. Foi importante para entender o que era bem estabelecido, os padrões que elas seguem e funcionalidades. Alguns pontos que são importantes de serem destacados:</p>
+        <ul class="lista-disc">
+            <li>Possuem bastante flexibilidade no layout, permitindo ao usuário escolher aquele que atende melhor sua necessidade.</li>
+            <li>Interface minimalista.</li>
+            <li>Facilidade de visualizar informações.</li>
+            <li>Muitas funcionalidades.</li>
+            <li>Já apresentam algum nível de automatização.</li>
+        </ul>
+        <p>Criei uma jornada do usuário para explorar melhor as dores e encontrar oportunidades.</p>
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jornada.png" alt="Jornada do Usuário">
+        <h4 class="artigo-titulo">Rabiscoframes</h4>
+        <p>Foram feitos alguns desenhos da solução pensada, como seriam os elementos da interface e suas interações.</p>
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/rabiscoframe.png" alt="Rabiscoframe">
+        <h4 class="artigo-titulo">Solução</h4>
+        <p>A interface foi pensada para ser simples e minimalista, garantindo uma fácil identificação de elementos e informações importantes achadas durante desk research. Informações identificadas como não relevantes foram ocultadas, sendo acessadas por meio de interações pensadas com alguns elementos da interface.</p>
+        <p>A estrutura é composta por uma header, uma barra de ferramentas e os quadros. Os quadros foram pensados para funcionarem como widgets, podendo ser trocados para criar novos layouts.</p>        
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/comp-header.png" alt="Header">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/comp-bar.png" alt="Barra de Ferramentas">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/comp-quadros.png" alt="Quadros">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus1.png" alt="Justificativa">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus2.png" alt="Justificativa">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus3.png" alt="Justificativa">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus4.png" alt="Justificativa">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus5.png" alt="Justificativa">
+        <img class="img zoomD" src="../imagens/projetos/gestao-projeto/jus6.png" alt="Justificativa">
+        <h4 class="artigo-titulo">Próximos Passos</h4>
+        <ul class="lista-disc">
+            <li>Validar o protótipo</li>
+            <li>Extração de relatórios para uso interno e também para cliente.</li>
+            <li>Criar telas de menus, pop-ups, tooltips, de configuração... </li>
+            <li>Criar interface para os colaboradores.</li>
+            <li>Pensar na possibilidade de automatizar processos usando IA, recomendando colaborador ocioso para tarefa ou preencher tarefas usando um banco de dados como referência por exemplo.</li>
+            <li>Criar templates de quadros.</li>            
+        </ul>
+        <h4 class="artigo-titulo">Proposta final</h4>
+        <img class="img-proposta zoomD" src="../imagens/projetos/gestao-projeto/proposta-final.png" alt="Proposta final">
+    </article>  
+    <footer>
+        <h6>Site desenvolvido por Augusto Brandão.</h6>
+    </footer>
+</body>
+</html>
