@@ -87,13 +87,13 @@ footer h6 {
     color: var(--cor-1);
     margin: auto;
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 32px;
 }
 
-.button-1 {
+.botao-1 {
     display: block;
     width: fit-content;
-    font: var(--fonte-h5);
+    font: var(--fonte-h6);
     background-color: var(--cor-2);
     color: var(--cor-1);
     border-radius: var(--bordas16);
@@ -101,7 +101,30 @@ footer h6 {
     margin: 48px auto;
 }
 
-.button-1:hover {
+.botao-1:hover {
+    box-shadow: var(--sombra-hover-1);
+    transform: translateY(-4px);
+}
+
+.botao-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    background-color: var(--cor-2);
+    color: var(--cor-1);
+    border-radius: var(--bordas16);
+    padding: 16px 48px;
+    margin: 48px auto;
+}
+
+.botao-icone > svg {
+    fill: var(--cor-1);
+    height: 24px;
+}
+
+.botao-icone:hover {
     box-shadow: var(--sombra-hover-1);
     transform: translateY(-4px);
 }
