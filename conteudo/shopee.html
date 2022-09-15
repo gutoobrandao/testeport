@@ -6,6 +6,7 @@
     <title>Redesign da home do aplicativo da Shopee.</title>
     <link rel="stylesheet" href="../estilos/global.css">
     <link rel="stylesheet" href="../estilos/sub-pag-projetos.css">
+    <script src="../js/modal.js"></script>
     <link rel="shortcut icon" href="../imagens/projetos/shopee/favicon.png" type="image/x-icon">
     <meta name="description" content="Redesign da home do aplicativo da Shopee.">
 </head>
@@ -25,6 +26,7 @@
         </div>
     </section>
     <article>
+        <div id="modal"></div>
         <h4 class="artigo-titulo">Produto</h4>
         <p>Shopee é uma empresa multinacional de tecnologia de Singapura que se concentra principalmente no e-commerce sendo líder no Sudeste Asiático e Taiwan. Possui uma variedade grande de produtos, eletrônicos, produtos de beleza, brinquedos e tantos outros. Chegou ao Brasil em 2019 e vem ganhando cada vez mais espaço no mercado nacional.</p>
         <h4 class="artigo-titulo">Pesquisa inicial</h4>
@@ -42,14 +44,14 @@
         <p>Utilizando as heurísticas de Nielsen para fazer a análise de usabilidade, considerei as três mais evidentes na interface.</p>
         <h5 class="artigo-titulo">Consistência e Padronização</h5>
         <p>Alguns elementos visuais como os cards de produtos, ícones e categorias não seguem um padrão. Outro ponto importante de ressaltar é na barra de pesquisa, onde o texto não corresponde com a função da barra de busca.</p>            
-        <img class="img" src="../imagens/projetos/shopee/analise-1a.png" alt="Pontos de melhoria">
-        <img class="img" src="../imagens/projetos/shopee/analise-1b.png" alt="Pontos de melhoria">
+        <img class="img zoomD" src="../imagens/projetos/shopee/analise-1a.png" alt="Pontos de melhoria">
+        <img class="img zoomD" src="../imagens/projetos/shopee/analise-1b.png" alt="Pontos de melhoria">
         <h5 class="artigo-titulo">Eficiência e flexibilidade de uso</h5>                
         <p>O aplicativo apresenta muitas opções para o usuário fazendo com que ele tenha que buscar a opção que deseja no meio de várias opções.</p>
         <p>Outro ponto é que funções importantes como “Compras”, que permite ao usuário um acesso rápido às compras feitas e podendo acompanhar o andamento delas, ficam escondidas. Isso faz com que o usuário precise cumprir mais etapas para acessar algo de importância no uso da plataforma. <strong>(Tela da esquerda na imagem abaixo)</strong></p>
         <h5 class="artigo-titulo">Estética e design minimalista</h5>
-        <p>Um dos principais pontos de melhoria na interface, a quantidade de informações apresentadas para o usuário logo na página inicial faz com que ele fique confuso e perdido logo no primeiro contato com a interface. Pouco espaçamento, respiro visual, muitas opções de atalhos e menus. Com tantas opções o que era necessário ser destacado acaba perdendo seu valor. <strong>(Tela da direita na imagem abaixo)</strong></p>
-        <img class="img" src="../imagens/projetos/shopee/analise-2.png" alt="Pontos de melhoria">
+        <p>Um dos principais pontos de melhoria na interface. A quantidade de informações apresentadas para o usuário logo na página inicial faz com que ele fique confuso e perdido logo no primeiro contato com o app. Pouco espaçamento, pouco respiro visual e muitas opções de atalhos e menus. Com tantas opções o que era necessário ser destacado acaba perdendo seu valor. <strong>(Tela da direita na imagem abaixo)</strong></p>
+        <img class="img zoomD" src="../imagens/projetos/shopee/analise-2.png" alt="Pontos de melhoria">
         <h4 class="artigo-titulo">Objetivos</h4>
         <p>As diretrizes básicas que nortearam o redesign da interface da home foram:</p>
         <div class="card-principal">
@@ -63,14 +65,14 @@
             <p>Evitar mudanças disruptivas fazendo com que usuários mais antigos tenham que aprender a utilizar a nova interface.</p>
         </div>
         <h4 class="artigo-titulo">Ícones e Tipografia</h4>
-        <img class="img" src="../imagens/projetos/shopee/icones.png" alt="Ícones">
-        <img class="img" src="../imagens/projetos/shopee/tipografia.png" alt="Tipografia">
+        <img class="img zoomD" src="../imagens/projetos/shopee/icones.png" alt="Ícones">
+        <img class="img zoomD" src="../imagens/projetos/shopee/tipografia.png" alt="Tipografia">
         <h4 class="artigo-titulo">Rabiscoframes</h4>
         <p>Primeiros esboços da solução.</p>
-        <img class="img" src="../imagens/projetos/shopee/rabiscoframe.png" alt="Rabiscoframes">
+        <img class="img zoomD" src="../imagens/projetos/shopee/rabiscoframe.png" alt="Rabiscoframes">
         <h4 class="artigo-titulo">Solução</h4>
         <p>Todas as telas com acesso direto pela barra de navegação inferior foram redesenhadas.</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-telas.png" alt="Telas">
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-telas.png" alt="Telas">
         <h5 class="artigo-titulo">Top bar</h5>
         <ul class="lista-disc">
             <li><strong>Mensagens: </strong>Por ser uma funcionalidade com menos acessos, foi movida para o menu na bottom navigation.</li>
@@ -78,32 +80,37 @@
             <li><strong>Banners: </strong>A cor de fundo do banner foi separada da cor de fundo da top bar evitando assim problemas de contraste. A barra de status foi removida para fora  do banner para evitar problemas com contraste e ter maior visibilidade.</li>
         </ul>
         <p>Antes (tela da esquerda) e depois (tela da direita).</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-top-bar.png" alt="Top bar">
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-top-bar.png" alt="Top bar">
         <h5 class="artigo-titulo">Bottom navigation</h5>
         <ul class="lista-disc">
             <li><strong>Quantidade de atalhos: </strong>Foi reduzida a quantidade de atalhos na barra, aumentando o espaço entre eles, melhorando sua legibilidade e área de toque. Shopee Oficial e Prêmios foram adicionados em uma seção na página inicial de atalhos.</li>
             <li><strong>Mudança de atalho: </strong>Troca do atalho Eu pelo Menu. Quando o usuário clicava no atalho era direcionado para uma página que continha funções que não fazem parte usualmente da seção de perfil ou conta.</li>
         </ul>
         <p>Antes (tela da esquerda) e depois (tela da direita).</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-barra-inferior.png" alt="Bottom Bar">
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-barra-inferior.png" alt="Bottom Bar">
         <h5 class="artigo-titulo">Categorias</h5>
         <p>As categorias foram reformuladas com maior espaçamento e respiro visual garantindo uma melhor visualização do conteúdo sem sobrecarregar o usuário. Em categorias especiais como ofertas relâmpago e liquidação, o contador regressivo e a caixa com texto que identifica a categoria que está em liquidação, foram modificados para se adequar a identidade visual da plataforma e dar mais consistência a interface.</p>
         <p>O botão de ver mais que ficava no canto superior direito foi colocado em baixo dos produtos, em uma posição com maior visibilidade. Além disso sua aparência foi modificada garantindo maior acessibilidade.</p>
         <p>Antes (tela da esquerda) e depois (tela da direita).</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-categorias.png" alt="Categorias">
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-categorias.png" alt="Categorias">
         <h5 class="artigo-titulo">Menu</h5>
         <p>A página de perfil foi simplificada, removendo opções e realocando outras que tinham maior importância e estavam escondidas dentro do menu como por exemplo Minhas compras, a solução antiga fazia com o que usuário além de descobrir sua localização precisasse de mais interações para acessá-la.</p>
         <p>Antes (tela da esquerda) e depois (tela da direita).</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-menu.png" alt="Menu">
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-menu.png" alt="Menu">
         <h5 class="artigo-titulo">Cards de promoção</h5>
         <p>Dentro da plataforma tinham vários modelos de cards, o que criava uma inconsistência. Escolhi um dos modelos que era melhor organizado e flexível. A partir dele modifiquei o tamanho da caixa de texto cabendo mais informações dos produtos e adicionei uma linha que serve para separar as imagens do produto de suas informações. </p>
         <p>Os preços receberam maior destaque com seu texto em negrito e uma fonte um pouco maior. Outro ponto é o valor sem desconto que foi adicionado, evitando assim que o usuário fique confuso sem saber se o desconto mostrado na imagem já está incorporado no preço apresentado.</p>
         <p>Antes (tela da esquerda) e depois (tela da direita).</p>
-        <img class="img" src="../imagens/projetos/shopee/soluçao-cards.png" alt="Cards">        
+        <img class="img zoomD" src="../imagens/projetos/shopee/soluçao-cards.png" alt="Cards">        
         <h4 class="artigo-titulo">Proposta Final</h4>
         <p>Abaixo o protótipo navegável, use o mouse para interagir com a interface.</p>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXvyqFvroEbqkUBB3ucTVdT%2FDesafio-UX-Shopee%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D1%253A4%26starting-point-node-id%3D1%253A2" allowfullscreen></iframe>
-        <a class="button-1" href="https://www.figma.com/file/XvyqFvroEbqkUBB3ucTVdT/Desafio-UX-Shopee?node-id=1%3A4" target="_blank" rel="external">Acessar Arquivo do Figma</a>   
+        <a class="botao-icone" href="https://www.figma.com/file/XvyqFvroEbqkUBB3ucTVdT/Desafio-UX-Shopee?node-id=1%3A4" target="_blank" rel="external">
+            <svg class="icone-botao" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8.415 0C5.968 0 4 2.053 4 4.568c0 1.529.728 2.887 1.847 3.716A4.613 4.613 0 0 0 4 12c0 1.53.728 2.887 1.847 3.716A4.613 4.613 0 0 0 4 19.432C4 21.947 5.968 24 8.415 24c2.446 0 4.415-2.053 4.415-4.568V15.57a4.307 4.307 0 0 0 2.755.999C18.032 16.568 20 14.515 20 12a4.61 4.61 0 0 0-1.847-3.716A4.613 4.613 0 0 0 20 4.568C20 2.053 18.032 0 15.585 0h-7.17ZM5.659 4.568c0-1.591 1.242-2.865 2.756-2.865h2.755v5.73H8.415c-1.514 0-2.756-1.275-2.756-2.865Zm9.926 2.864H12.83v-5.73h2.755c1.515 0 2.756 1.275 2.756 2.866c0 1.59-1.241 2.864-2.756 2.864ZM5.66 12c0-1.59 1.242-2.865 2.756-2.865h2.755v5.73H8.415C6.9 14.865 5.659 13.59 5.659 12Zm7.17 0c0-1.59 1.242-2.865 2.756-2.865c1.515 0 2.756 1.274 2.756 2.865c0 1.59-1.241 2.865-2.756 2.865c-1.514 0-2.755-1.274-2.755-2.865Zm-7.17 7.432c0-1.59 1.242-2.864 2.756-2.864h2.755v2.864c0 1.591-1.24 2.865-2.755 2.865c-1.514 0-2.756-1.274-2.756-2.865Z"/>
+            </svg>
+            <h6>Acessar Arquivo do Figma</h6>
+        </a>  
     </article>
     <nav id="nav-inferior">
         <a class="nav-inferior nav-hsl-100" href="../conteudo/hsl-100.html">
@@ -112,7 +119,7 @@
         </a>            
     </nav>  
     <footer>
-        <h6>Site desenvolvido por Augusto Brandão.</h6>
+        <h6>Design e Código feito por Augusto Brandão © 2022</h6>
     </footer>
 </body>
 </html>

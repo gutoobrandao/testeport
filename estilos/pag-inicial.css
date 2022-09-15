@@ -44,7 +44,6 @@
     width: 100%;
     background-color: var(--cor-branco);
     border-radius: var(--bordas16);
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
 }
 
 .card-pag-inicial-conteudo {
@@ -83,10 +82,6 @@ header {
     animation: header 3s ease-in-out forwards;
 }
 
-.logo {
-    float: left;
-}
-
 .logo-conteudo {
     display: flex;
     gap: 16px;
@@ -99,17 +94,15 @@ header {
 
 .nav-superior > ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
 }
 
 .nav-superior > ul > li > a {
     font: var(--fonte-h5);
 	color: var(--cor-1);
-}
-
-.menu-nav {
-    display: none;
-    visibility: hidden;
 }
 
 .hero-textos {
@@ -173,9 +166,11 @@ header {
 
 .contatos-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 96px;
+    column-gap: 96px;
+    row-gap: 48px;
     margin: auto;
 }
 
